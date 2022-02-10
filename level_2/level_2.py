@@ -12,7 +12,7 @@ if __name__ == "__main__":
     i = 0
     while (i != 1024):
         new_session = requests.session()
-        html = new_session.get("http://158.69.76.135/level1.php")
+        html = new_session.get("http://158.69.76.135/level2.php")
         token = BeautifulSoup(html.text, "html.parser")
 
         hidden_key = token.find("form", {"method": "post"})
